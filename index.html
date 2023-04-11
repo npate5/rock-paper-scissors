@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Rock Paper Scissors</h1>
+    </header>
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="score-info" id="scoreInfo">Computer vs. Human</h2>
+            <h3 class="score-message" id="scoreMessage">
+                First to score 5 points wins the game!
+            </h3>
+            <div class="scores-container">
+                <div class="score-box">
+                    <div class="sign" id="playerSign">?</div>
+                    <p class="score" id="playerScore">Player: 0</p>
+                </div>
+                <div class="score-box">
+                    <div class="sign" id="computerSign">?</div>
+                    <p class="score" id="computerScore">Computer: 0</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+                <div class="sign">✊</div>
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+                <div class="sign">✋</div>
+            </button>
+            <button class="btn btn-square" id="scissorBtn">
+                <div class="sign">✌</div>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Neha
+        </p>
+        <a href="https://github.com/npate5" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    
+</body>
+
+</html>
